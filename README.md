@@ -3,6 +3,7 @@
 📊Bird vs Drone Classification & Detection using Deep Learning (YOLOv8 Format)
 
 Project Overview
+
 This project presents an end-to-end computer vision solution to classify and detect birds and drones using deep learning techniques. It combines Custom CNN, Transfer Learning, and Object Detection (YOLOv8) along with a Streamlit web application for real-time predictions.
 The solution will help in security surveillance, wildlife protection, and airspace safety where accurate identification between drones and birds is critical. The project involves building a Custom CNN classification model, leveraging transfer learning, and optionally implementing YOLOv8 for real-time object detection. The final solution will be deployed using Streamlit for interactive use.
 Wildlife Protection
@@ -21,6 +22,7 @@ In today’s world of aerial surveillance and airspace security, distinguishing 
 •  Multi-object aerial classification.
 
 Project Workflow
+
 🔹 Understand the Dataset
 •	Inspect dataset folder structure
 •	Check number of images per class
@@ -48,13 +50,17 @@ Project Workflow
 •	Gradually unfroze top layers of the base model
 •	Fine-tuned the model on the bird vs drone dataset
 •	Optimized performance using validation data
+
 🔹Model Evaluation
+
 •	Evaluate test results with confusion matrix & classification report
 •	Plot accuracy/loss graphs
+
 🔹Model Comparison
 •	Compare accuracy, training time, and generalization performance.
 
 📊 Accuracy & Loss Graphs Matter (Business Perspective)
+
 📈 Accuracy Graph Explanation: 
 🔹 Training Accuracy
 Measures how well the model learns from training data
@@ -63,6 +69,7 @@ Measures performance on unseen data.
 Business Insight:
 •	If both training & validation accuracy increase → model is reliable.
 •	If training accuracy is high but validation is low → risk of false alarms in production.
+
 📈 Loss Graph Explanation:
 The loss graph shows how well the model minimizes prediction errors.
 🔹 Training Loss
@@ -73,20 +80,25 @@ Business Insight:
 •	Decreasing loss → model improving
 •	Increasing validation loss → model may fail in real-world scenarios.
 
-Object Detection with YOLOv8
+Object Detection with YOLOv8:
+
 ⚙️ Steps Performed
 •  Installed YOLOv8 (Ultralytics)
 •  Converted dataset into YOLO format (images & labels)
 •  Created data.yaml configuration file
 •  Trained YOLOv8 model
 •  Validated model performance
-• Ran inference on test and new imagesModel Training
+• Ran inference on test and new imagesModel Training.
+
 Custom CNN & Transfer Learning
+
 •	Data Augmentation applied (rotation, flipping, zoom, brightness)
 •	Optimizer: Adam
 •	Loss Function: Binary Crossentropy
 •	Metrics: Accuracy
+
 YOLOv8
+
 •	Model: yolov8n / yolov8s
 •	Epochs: 10–30
 •	Image Size: 640
